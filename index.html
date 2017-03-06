@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript 1</title>
+  </head>
+  <body>
+
+<section id="oddeven">
+
+
+    <h1>Odd Even Checker</h1>
+    <input type="text" id="inputnumber" name="" value="">
+    <button type="button" onclick="OddEven();">Click Here</button>
+    <h2 id="ShowEven"></h2>
+
+</section>
+
+<section id="result">
+
+  <h1>Result Checker</h1>
+  <input type="text" id="inputN" name="" value=""><br>
+  <button type="button" onclick="ShowResult" name="button">Click Here</button>
+  <h2 id="showR"></h2>
+
+</section>
+
+
+    <script type="text/javascript">
+
+    function OddEven(){
+		var b=document.getElementById("inputnumber").value;
+		var Disp=document.getElementById("ShowEven");
+
+		if(b%2==0){
+			Disp.innerHTML="The number is Even";
+		}
+		else {
+			Disp.innerHTML="The number is Odd";
+			}
+	}
+
+<!-- result -->
+
+  function ShowResult() {
+    var a=document.getElementById('inputN').value;
+    var Show=document.getElementById('showR');
+
+    if (a<=100) {
+      show.innerHTML="A+";
+      if (a<=79) {
+        show.innerHTML="A-";
+        if (a<=69) {
+          show.innerHTML="A";
+          if (a<=59) {
+            show.innerHTML="B";
+            if (a<=49) {
+              show.innerHTML="C";
+              if (a<=39) {
+                show.innerHTML="D";
+                if (a<=32 && a>=0) {
+                  show.innerHTML="F";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+    </script>
+
+
+  </body>
+</html>
